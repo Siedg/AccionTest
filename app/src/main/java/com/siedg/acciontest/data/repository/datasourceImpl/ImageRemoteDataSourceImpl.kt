@@ -5,7 +5,7 @@ import com.siedg.acciontest.data.model.ImageList
 import com.siedg.acciontest.data.repository.datasource.ImageRemoteDataSource
 import retrofit2.Response
 
-class ImageRemoteDataSourceImpl (
+class ImageRemoteDataSourceImpl(
     private val service: ApiService,
     private val filter: String
 ): ImageRemoteDataSource {

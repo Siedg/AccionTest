@@ -6,12 +6,12 @@ import dagger.Subcomponent
 
 @HomeScope
 @Subcomponent(modules = [HomeModule::class])
-interface HomeSubComponent {
+interface HomeSubComponent{
     fun inject(mainActivity: MainActivity)
     fun inject(homeFragment: HomeFragment)
 
     @Subcomponent.Factory
-    interface Factory {
+    interface Factory{
         fun create(): HomeSubComponent
     }
 }

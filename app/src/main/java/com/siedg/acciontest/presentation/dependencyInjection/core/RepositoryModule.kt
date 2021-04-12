@@ -15,7 +15,7 @@ class RepositoryModule {
     fun provideRepository(
         remote: ImageRemoteDataSource,
         cache: ImageCacheDataSource
-    ) : ImageRepository {
+    ) : ImageRepository{
         return ImageRepositoryImpl(remote, cache)
     }
 }

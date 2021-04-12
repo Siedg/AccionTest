@@ -1,5 +1,6 @@
 package com.siedg.acciontest.presentation.ui
 
+import android.content.res.Resources
 import com.bumptech.glide.request.RequestOptions
 import com.siedg.acciontest.R
 import com.siedg.acciontest.data.model.Image
@@ -16,8 +17,10 @@ class HomeItem(private val image: Image) : BindableItem<HomeItemBinding>() {
                 image.link,
                 RequestOptions()
                     .placeholder(R.drawable.ic_loading)
-                    .error(R.drawable.ic_error)
+                    .error(R.drawable.ic_error),
             )
+            ivHomeItem.layoutParams.height = Resources.getSystem().displayMetrics.heightPixels / 5
+            ivHomeItem.layoutParams.width = Resources.getSystem().displayMetrics.widthPixels / 2
         }
     }
 }

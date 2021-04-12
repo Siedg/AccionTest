@@ -6,9 +6,11 @@ import com.siedg.acciontest.domain.GetImagesUseCase
 
 class HomeViewModel (
     private val getImagesUseCase: GetImagesUseCase
-) : ViewModel() {
+): ViewModel(){
+
     fun getImages() = liveData {
         val imageList = getImagesUseCase.execute()
         emit(imageList)
     }
+
 }

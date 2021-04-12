@@ -7,12 +7,12 @@ import dagger.Module
 import dagger.Provides
 
 @Module(
-    subcomponents = [ HomeSubComponent::class ]
+    subcomponents = [HomeSubComponent::class]
 )
 class AppModule(private val context: Context) {
     @Singleton
     @Provides
-    fun provideAppApplicationContext(): Context {
+    fun provideApplicationContext(): Context {
         return context.applicationContext
     }
 }

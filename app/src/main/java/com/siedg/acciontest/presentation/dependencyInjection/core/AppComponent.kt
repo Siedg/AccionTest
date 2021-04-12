@@ -15,6 +15,7 @@ import javax.inject.Singleton
         UseCaseModule::class
     ]
 )
+
 interface AppComponent {
     fun homeSubComponent(): HomeSubComponent.Factory
 }

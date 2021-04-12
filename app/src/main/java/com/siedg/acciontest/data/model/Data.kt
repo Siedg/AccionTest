@@ -2,8 +2,8 @@ package com.siedg.acciontest.data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Data (
-    @SerializedName("Images")
+data class Data(
+    @SerializedName("images")
     val images: List<Image>
 )
 

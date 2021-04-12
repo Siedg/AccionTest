@@ -53,12 +53,10 @@ class HomeFragment : Fragment(){
                 binding.rvHomeList.adapter = groupAdapter
             }
         })
-            return binding.root
+        return binding.root
     }
 
     private fun List<Image>.toRecyclerListItem(): List<HomeItem>{
-        return this.map { item ->
-            HomeItem(item)
-        }
+        return this.map { item -> HomeItem(item) }
     }
 }

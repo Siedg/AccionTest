@@ -5,7 +5,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/purple_light">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvHomeList"
@@ -15,8 +16,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:spanCount="4"
-            tools:itemCount="64"
+            app:spanCount="2"
+            tools:itemCount="128"
             tools:listitem="@layout/home_item"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
 
