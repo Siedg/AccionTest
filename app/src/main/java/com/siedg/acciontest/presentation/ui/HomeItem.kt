@@ -6,7 +6,7 @@ import com.siedg.acciontest.R
 import com.siedg.acciontest.data.model.Image
 import com.xwray.groupie.databinding.BindableItem
 import com.siedg.acciontest.databinding.HomeItemBinding
-import com.siedg.acciontest.loadWithURL
+import com.siedg.acciontest.extensions.loadWithURL
 
 class HomeItem(private val image: Image) : BindableItem<HomeItemBinding>() {
     override fun getLayout(): Int = R.layout.home_item
@@ -19,7 +19,7 @@ class HomeItem(private val image: Image) : BindableItem<HomeItemBinding>() {
                     .placeholder(R.drawable.ic_loading)
                     .error(R.drawable.ic_error),
             )
-            ivHomeItem.layoutParams.height = Resources.getSystem().displayMetrics.heightPixels / 5
+            ivHomeItem.layoutParams.height = Resources.getSystem().displayMetrics.heightPixels / 4
             ivHomeItem.layoutParams.width = Resources.getSystem().displayMetrics.widthPixels / 2
         }
     }

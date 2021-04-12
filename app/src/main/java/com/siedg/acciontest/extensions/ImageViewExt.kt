@@ -1,4 +1,4 @@
-package com.siedg.acciontest
+package com.siedg.acciontest.extensions
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide
