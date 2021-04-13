@@ -17,7 +17,7 @@ class HomeItem(private val image: Image) : BindableItem<HomeItemBinding>() {
                 image.link,
                 RequestOptions()
                     .placeholder(R.drawable.ic_loading)
-                    .error(R.drawable.ic_error),
+                    .error(R.drawable.ic_error)
             )
             ivHomeItem.layoutParams.height = Resources.getSystem().displayMetrics.heightPixels / 4
             ivHomeItem.layoutParams.width = Resources.getSystem().displayMetrics.widthPixels / 2
